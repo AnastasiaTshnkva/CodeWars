@@ -9,7 +9,6 @@ function narcissistic(value) {
     const multiplication = numArr.reduce((accum, item, ) => {
         return accum + (item ** numArr.length);
     }, 0);
-    console.log(arr, numArr, multiplication);
     if (Number(value) === Number(multiplication)) {
         return true;
     } else {
@@ -17,4 +16,25 @@ function narcissistic(value) {
     };
 };
 
-console.log(narcissistic(153));
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+//     It should remove all values from list a, which are present in list b keeping their order.
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+//     arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+function arrayDiff(a, b) {
+
+    const res = a.filter(elem => {
+        for (let i = 0; i < b.length; i++) {
+            elem !== b[i];
+            console.log(b[i]);
+        }
+    });
+    return res;
+};
+console.log(arrayDiff([0,1,1,2,4], [1, 2] ));
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(i);
+// }
