@@ -23,18 +23,34 @@ function narcissistic(value) {
 // If a value is present in b, all of its occurrences must be removed from the other:
 //     arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
-function arrayDiff(a, b) {
-
-    const res = a.filter(elem => {
-        for (let i = 0; i < b.length; i++) {
-            elem !== b[i];
-            console.log(b[i]);
-        }
-    });
-    return res;
-};
-console.log(arrayDiff([0,1,1,2,4], [1, 2] ));
+// function arrayDiff(a, b) {
+//
+//     const res = a.filter(elem => {
+//         for (let i = 0; i < b.length; i++) {
+//             elem !== b[i];
+//             console.log(b[i]);
+//         }
+//     });
+//     return res;
+// };
+// console.log(arrayDiff([0,1,1,2,4], [1, 2] ));
 
 // for (let i = 0; i < 3; i++) {
 //     console.log(i);
 // }
+
+//
+// To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+
+// function openOrSenior(data){
+//     const res = data.map(elem => {
+//         if (elem[0] >= 55 && elem[1] >= 7) {
+//             return 'Senior';
+//         } else {
+//             return 'Open';
+//         }
+//     })
+//     return res;
+// }
+//
+// console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
