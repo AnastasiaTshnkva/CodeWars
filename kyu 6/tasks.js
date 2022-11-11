@@ -44,7 +44,7 @@ function narcissistic(value) {
 
 // function openOrSenior(data){
 //     const res = data.map(elem => {
-//         if (elem[0] >= 55 && elem[1] >= 7) {
+//         if (elem[0] >= 55 && elem[1] > 7) {
 //             return 'Senior';
 //         } else {
 //             return 'Open';
@@ -54,3 +54,4 @@ function narcissistic(value) {
 // }
 //
 // console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]));
+
